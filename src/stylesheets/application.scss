@@ -1,6 +1,34 @@
 body {
   font: {
     family: Verdana;
-    size: 10pt;
+    size: 16pt;
   }
+}
+
+#rhyme {
+  width: 500px;
+}
+
+
+
+#rhyme-scheme {
+  width: 500px;
+  height: 100px;
+  .phoneme {
+    float: left;
+    width:100px;
+  }
+}
+#rhyme-topic {
+  width: 500px;
+  height: 100px;
+  .topic {
+    float: left;
+    width:100px;
+  }
+}
+
+#roll {
+  width: 500px;
+  height: 100px;
 }

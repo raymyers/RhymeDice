@@ -1,4 +1,4 @@
-%h1 Rhyme Dice
+/%h1 Rhyme Dice
 #data(style="display:none")
   #topics
     - topics.each do |topic|
@@ -11,7 +11,12 @@
         .phoneme
           .symbol= phon[:symbol]
           .word= phon[:word]
-#rhyme-topic
-#rhyme-scheme
-#roll
-  %input(type="submit" value="ROLL")/
+#rhyme
+  #rhyme-topic-label
+    Topic:
+  #rhyme-topic
+  #rhyme-scheme-label
+    Scheme:
+  #rhyme-scheme
+  #roll
+    %input(type="submit" value="ROLL")/

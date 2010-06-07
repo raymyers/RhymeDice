@@ -1,5 +1,38 @@
 /* line 1 */
 body {
   font-family: Verdana;
-  font-size: 10pt;
+  font-size: 16pt;
+}
+
+/* line 8 */
+#rhyme {
+  width: 500px;
+}
+
+/* line 14 */
+#rhyme-scheme {
+  width: 500px;
+  height: 100px;
+}
+/* line 17 */
+#rhyme-scheme .phoneme {
+  float: left;
+  width: 100px;
+}
+
+/* line 22 */
+#rhyme-topic {
+  width: 500px;
+  height: 100px;
+}
+/* line 25 */
+#rhyme-topic .topic {
+  float: left;
+  width: 100px;
+}
+
+/* line 31 */
+#roll {
+  width: 500px;
+  height: 100px;
 }

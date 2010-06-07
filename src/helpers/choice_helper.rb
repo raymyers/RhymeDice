@@ -17,6 +17,6 @@ module ChoiceHelper
   end
   
   def topics()
-    %w(Physics Regions Theories)
+    %w(Physics Chemistry Biology Regions Theories Hopes Fears Gender Relationships Sex Romance Language Politics Leaders Artists Painters Musicians Poets Ecosystems Climates Plants Animals Time Past Future Religeon Superstition Rituals Fanbase Skills Medicine Pain Death)
   end
 end
