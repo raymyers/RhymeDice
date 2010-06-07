@@ -56,7 +56,8 @@ $(document).ready(function(){
 			playListInit(false); // Parameter is a boolean for autoplay.
 			demoInstanceInfo(this.element, $("#demo_info")); // This displays information about jPlayer's configuration in the demo page
 		},
-		oggSupport: true
+		oggSupport: true,
+		swfPath: "/flash"
 	})
 	.jPlayer("onProgressChange", function(loadPercent, playedPercentRelative, playedPercentAbsolute, playedTime, totalTime) {
 		jpPlayTime.text($.jPlayer.convertTime(playedTime));
