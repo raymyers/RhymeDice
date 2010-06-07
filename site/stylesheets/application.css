@@ -9,19 +9,21 @@ body {
   width: 500px;
 }
 
-/* line 14 */
+/* line 12 */
 #rhyme-scheme {
+  font-size: 24pt;
   width: 500px;
   height: 100px;
 }
-/* line 17 */
+/* line 16 */
 #rhyme-scheme .phoneme {
   float: left;
   width: 100px;
 }
 
-/* line 22 */
+/* line 21 */
 #rhyme-topic {
+  font-size: 24pt;
   width: 500px;
   height: 100px;
 }
