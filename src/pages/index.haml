@@ -1,1 +1,17 @@
-%h1 StaticMatic!
+%h1 Rhyme Dice
+#data(style="display:none")
+  #topics
+    - topics.each do |topic|
+      .choice
+        .topic
+          = topic
+  #phonemes
+    - phonemes.each do |phon|
+      .choice
+        .phoneme
+          .symbol= phon[:symbol]
+          .word= phon[:word]
+#rhyme-topic
+#rhyme-scheme
+#roll
+  %input(type="submit" value="ROLL")/
