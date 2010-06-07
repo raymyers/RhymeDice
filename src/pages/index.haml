@@ -10,10 +10,14 @@
         .phoneme
           .symbol= phoneme[:symbol]
           .word= phoneme[:word]
-#rhyme
-  #rhyme-topic-label Topic:
-  #rhyme-topic
-  #rhyme-scheme-label Scheme:
-  #rhyme-scheme
-  #roll
-    %input(type='button' value='Roll')/
+#dice-interface
+  #rhyme
+    #rhyme-topic-label Topic:
+    #rhyme-topic
+    #rhyme-scheme-label Scheme:
+    #rhyme-scheme
+    #roll
+      %input(type='button' value='Roll')/
+  #beat.hidden
+    = partial('jplayer')
+  .clear

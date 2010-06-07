@@ -4,12 +4,13 @@
     %title Rhyme Dice
     %meta(http-equiv="Content-Type" content="text/html; charset=UTF-8")/
     = stylesheets
-    = javascripts('jquery-1.4.2.min', :dice)
+    = javascripts('jquery-1.4.2.min', "jquery.jplayer.min", "jplayer-local", :dice)
   %body
     = yield
     #copyright
       %p
         ©
         = Time.now.year
-        Ice Nine and DJ Pompey.
+        %span.beatToggle
+          Ice Nine and DJ Pompey.
         All rights reserved.

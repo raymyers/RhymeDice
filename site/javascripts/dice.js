@@ -33,4 +33,5 @@ RhymeDice.nextInt = function (choices) {
 
 $(function () {
     $("#roll input").click(RhymeDice.roll).click();
+    $(".beatToggle").click(function() {$("#beat").toggleClass("hidden");});
 });

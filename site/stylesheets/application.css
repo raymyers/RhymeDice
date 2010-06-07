@@ -5,33 +5,50 @@ body {
 }
 
 /* line 14 */
-#rhyme {
-  width: 500px;
+#dice-interface {
+  width: 900px;
 }
 
 /* line 18 */
-#rhyme-scheme {
+#rhyme {
+  width: 400px;
+}
+
+/* line 22 */
+#beat {
   width: 500px;
+}
+
+/* line 26 */
+#beat, #rhyme {
+  float: left;
+  padding: 0;
+  margin: 0;
+}
+
+/* line 32 */
+#rhyme-scheme {
+  width: 400px;
   height: 100px;
 }
-/* line 21 */
+/* line 35 */
 #rhyme-scheme .phoneme {
   padding: 10px;
   font-size: 24pt;
   float: left;
   width: 150px;
 }
-/* line 26 */
+/* line 40 */
 #rhyme-scheme .phoneme .word {
   text-transform: uppercase;
 }
 
-/* line 31 */
+/* line 45 */
 #rhyme-topic {
-  width: 500px;
+  width: 400px;
   height: 60px;
 }
-/* line 34 */
+/* line 48 */
 #rhyme-topic .topic {
   padding: 10px;
   font-size: 24pt;
@@ -39,14 +56,29 @@ body {
   width: 150px;
 }
 
-/* line 42 */
+/* line 56 */
 #roll input {
   font-size: 24pt;
   text-transform: uppercase;
 }
 
-/* line 47 */
+/* line 61 */
 #copyright {
   font-size: 10pt;
   padding: 10px;
+}
+
+/* line 66 */
+.hidden {
+  display: none;
+}
+
+/* line 69 */
+.clear {
+  height: 0;
+  font-size: 1px;
+  margin: 0;
+  padding: 0;
+  line-height: 0;
+  clear: both;
 }

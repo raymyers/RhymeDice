@@ -3,8 +3,8 @@
   <head>
     <title>Rhyme Dice</title>
     <meta content='text/html; charset=UTF-8' http-equiv='Content-Type' />
-    <link href="/stylesheets/application.css" media="all" rel="stylesheet" type="text/css"/>
-    <script language="javascript" src="javascripts/jquery-1.4.2.min.js" type="text/javascript"></script><script language="javascript" src="javascripts/dice.js" type="text/javascript"></script>
+    <link href="/stylesheets/application.css" media="all" rel="stylesheet" type="text/css"/><link href="/stylesheets/jplayer.blue.monday.css" media="all" rel="stylesheet" type="text/css"/>
+    <script language="javascript" src="javascripts/jquery-1.4.2.min.js" type="text/javascript"></script><script language="javascript" src="javascripts/jquery.jplayer.min.js" type="text/javascript"></script><script language="javascript" src="javascripts/jplayer-local.js" type="text/javascript"></script><script language="javascript" src="javascripts/dice.js" type="text/javascript"></script>
   </head>
   <body>
     <h1>Rhyme Dice</h1>
@@ -185,20 +185,71 @@
         </div>
       </div>
     </div>
-    <div id='rhyme'>
-      <div id='rhyme-topic-label'>Topic:</div>
-      <div id='rhyme-topic'></div>
-      <div id='rhyme-scheme-label'>Scheme:</div>
-      <div id='rhyme-scheme'></div>
-      <div id='roll'>
-        <input type='button' value='Roll' />
+    <div id='dice-interface'>
+      <div id='rhyme'>
+        <div id='rhyme-topic-label'>Topic:</div>
+        <div id='rhyme-topic'></div>
+        <div id='rhyme-scheme-label'>Scheme:</div>
+        <div id='rhyme-scheme'></div>
+        <div id='roll'>
+          <input type='button' value='Roll' />
+        </div>
       </div>
+      <div class='hidden' id='beat'>
+        <div id='jquery_jplayer'></div>
+        <div class='jp-playlist-player'>
+          <div class='jp-interface'>
+            <ul class='jp-controls'>
+              <li>
+                <a class='jp-play' href='#' id='jplayer_play' tabindex='1'>play</a>
+              </li>
+              <li>
+                <a class='jp-pause' href='#' id='jplayer_pause' tabindex='1'>pause</a>
+              </li>
+              <li>
+                <a class='jp-stop' href='#' id='jplayer_stop' tabindex='1'>stop</a>
+              </li>
+              <li>
+                <a class='jp-volume-min' href='#' id='jplayer_volume_min' tabindex='1'>min volume</a>
+              </li>
+              <li>
+                <a class='jp-volume-max' href='#' id='jplayer_volume_max' tabindex='1'>max volume</a>
+              </li>
+              <li>
+                <a class='jp-previous' href='#' id='jplayer_previous' tabindex='1'>previous</a>
+              </li>
+              <li>
+                <a class='jp-next' href='#' id='jplayer_next' tabindex='1'>next</a>
+              </li>
+            </ul>
+            <div class='jp-progress'>
+              <div class='jp-load-bar' id='jplayer_load_bar'>
+                <div class='jp-play-bar' id='jplayer_play_bar'></div>
+              </div>
+            </div>
+            <div class='jp-volume-bar' id='jplayer_volume_bar'>
+              <div class='jp-volume-bar-value' id='jplayer_volume_bar_value'></div>
+            </div>
+            <div class='jp-play-time' id='jplayer_play_time'></div>
+            <div class='jp-total-time' id='jplayer_total_time'></div>
+          </div>
+          <div class='jp-playlist' id='jplayer_playlist'>
+            <ul>
+              <!-- The function displayPlayList() uses this unordered list -->
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class='clear'></div>
     </div>
     <div id='copyright'>
       <p>
         ©
         2010
-        Ice Nine and DJ Pompey.
+        <span class='beatToggle'>
+          Ice Nine and DJ Pompey.
+        </span>
         All rights reserved.
       </p>
     </div>
