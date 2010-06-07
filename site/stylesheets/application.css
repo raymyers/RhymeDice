@@ -21,13 +21,17 @@ body {
   float: left;
   width: 150px;
 }
+/* line 26 */
+#rhyme-scheme .phoneme .word {
+  text-transform: uppercase;
+}
 
-/* line 28 */
+/* line 31 */
 #rhyme-topic {
   width: 500px;
   height: 60px;
 }
-/* line 31 */
+/* line 34 */
 #rhyme-topic .topic {
   padding: 10px;
   font-size: 24pt;
@@ -35,12 +39,13 @@ body {
   width: 150px;
 }
 
-/* line 39 */
-#roll {
+/* line 42 */
+#roll input {
   font-size: 24pt;
+  text-transform: uppercase;
 }
 
-/* line 43 */
+/* line 47 */
 #copyright {
   font-size: 10pt;
   padding: 10px;

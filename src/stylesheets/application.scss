@@ -23,6 +23,9 @@ $topicHeight: 60px;
     font-size: 24pt;
     float: left;
     width: $phonemeWidth;
+    .word {
+      text-transform: uppercase;
+    }
   }
 }
 #rhyme-topic {
@@ -36,8 +39,9 @@ $topicHeight: 60px;
   }
 }
 
-#roll {
+#roll input {
   font-size: 24pt;
+  text-transform: uppercase;
 }
 
 #copyright {

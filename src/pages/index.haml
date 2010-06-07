@@ -3,20 +3,17 @@
   #topics
     - topics.each do |topic|
       .choice
-        .topic
-          = topic
+        .topic= topic
   #phonemes
-    - phonemes.each do |phon|
+    - phonemes.each do |phoneme|
       .choice
         .phoneme
-          .symbol= phon[:symbol]
-          .word= phon[:word]
+          .symbol= phoneme[:symbol]
+          .word= phoneme[:word]
 #rhyme
-  #rhyme-topic-label
-    Topic:
+  #rhyme-topic-label Topic:
   #rhyme-topic
-  #rhyme-scheme-label
-    Scheme:
+  #rhyme-scheme-label Scheme:
   #rhyme-scheme
   #roll
-    %input(type="submit" value="ROLL")/
+    %input(type='button' value='Roll')/
