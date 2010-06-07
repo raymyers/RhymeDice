@@ -40,8 +40,9 @@ $(document).ready(function(){
 	var playItem = 0;
  
 	var myPlayList = [
-		{name:"Tempered Song",mp3:"http://www.miaowmusic.com/mp3/Miaow-01-Tempered-song.mp3",ogg:"http://www.miaowmusic.com/ogg/Miaow-01-Tempered-song.ogg"},
-		{name:"Thin Ice",mp3:"http://www.miaowmusic.com/mp3/Miaow-10-Thin-ice.mp3",ogg:"http://www.miaowmusic.com/ogg/Miaow-10-Thin-ice.ogg"}
+		//{name:"Tempered Song",mp3:"http://www.miaowmusic.com/mp3/Miaow-01-Tempered-song.mp3",ogg:"http://www.miaowmusic.com/ogg/Miaow-01-Tempered-song.ogg"},
+		{name:"dB - Larry David", mp3:"http://rhymedice.cadrlife.com/audio/Larry%20David%20Beat.mp3", ogg:"http://rhymedice.cadrlife.com/audio/Larry%20David%20Beat.ogg"
+}
 	];
  
 	// Local copy of jQuery selectors, for performance.
