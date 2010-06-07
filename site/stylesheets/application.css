@@ -1,20 +1,20 @@
 /* line 1 */
 body {
-  font-family: Verdana;
+  font-family: Helvetica, sans-serif;
   font-size: 16pt;
 }
 
-/* line 8 */
+/* line 14 */
 #rhyme {
   width: 500px;
 }
 
-/* line 12 */
+/* line 18 */
 #rhyme-scheme {
   width: 500px;
   height: 100px;
 }
-/* line 15 */
+/* line 21 */
 #rhyme-scheme .phoneme {
   padding: 10px;
   font-size: 24pt;
@@ -22,12 +22,12 @@ body {
   width: 150px;
 }
 
-/* line 22 */
+/* line 28 */
 #rhyme-topic {
   width: 500px;
   height: 60px;
 }
-/* line 25 */
+/* line 31 */
 #rhyme-topic .topic {
   padding: 10px;
   font-size: 24pt;
@@ -35,8 +35,13 @@ body {
   width: 150px;
 }
 
-/* line 33 */
+/* line 39 */
 #roll {
-  width: 500px;
-  height: 100px;
+  font-size: 24pt;
+}
+
+/* line 43 */
+#copyright {
+  font-size: 10pt;
+  padding: 10px;
 }

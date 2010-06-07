@@ -28,5 +28,5 @@ function nextInt(choices) {
 }
 
 $(function() {
-  $("#roll input").click(roll);
+  $("#roll input").click(roll).click();
 });

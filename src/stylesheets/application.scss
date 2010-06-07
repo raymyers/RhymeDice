@@ -1,36 +1,46 @@
 body {
   font: {
-    family: Verdana;
+    family: Helvetica, sans-serif;
     size: 16pt;
   }
 }
 
+$rhymeWidth: 500px;
+$phonemeHeight: 100px;
+$phonemeWidth: 150px;
+$topicWidth: 150px;
+$topicHeight: 60px;
+
 #rhyme {
-  width: 500px;
+  width: $rhymeWidth;
 }
 
 #rhyme-scheme {
-  width: 500px;
-  height: 100px;
+  width: $rhymeWidth;
+  height: $phonemeHeight;
   .phoneme {
     padding: 10px;
     font-size: 24pt;
     float: left;
-    width:150px;
+    width: $phonemeWidth;
   }
 }
 #rhyme-topic {
-  width: 500px;
-  height: 60px;
+  width: $rhymeWidth;
+  height: $topicHeight;
   .topic {
     padding: 10px;
     font-size: 24pt;
     float: left;
-    width:150px;
+    width: $topicWidth;
   }
 }
 
 #roll {
-  width: 500px;
-  height: 100px;
+  font-size: 24pt;
+}
+
+#copyright {
+  font-size: 10pt;
+  padding: 10px;
 }
