@@ -1,32 +1,36 @@
-var phonemeCount = 2;
-var topicCount = 1;
+"use strict";
+/*global RhymeDice*/
+var RhymeDice = {};
 
-function roll() {
-  $("#rhyme-scheme").empty();
-  var i;
-  for (i=0;i<phonemeCount;i++) {
-    $("#rhyme-scheme").append(randomPhoneme().html());
-  }
-  $("#rhyme-topic").empty();
-  for (i=0;i<topicCount;i++) {
-    $("#rhyme-topic").append(randomTopic().html());
-  }
-  
+RhymeDice.phonemeCount = 2;
+RhymeDice.topicCount = 1;
+
+RhymeDice.roll = function () {
+    $("#rhyme-scheme").empty();
+    var i;
+    for (i=0;i<RhymeDice.phonemeCount;i++) {
+        $("#rhyme-scheme").append(RhymeDice.randomPhoneme().html());
+    }
+    $("#rhyme-topic").empty();
+    for (i=0;i<RhymeDice.topicCount;i++) {
+        $("#rhyme-topic").append(RhymeDice.randomTopic().html());
+    }
 }
 
-function randomPhoneme() {
-  var l = $("#data #phonemes .choice").length
-  return $("#data #phonemes .choice:eq(" + nextInt(l) + ")");
-}
-function randomTopic() {
-  var l = $("#data #topics .choice").length
-  return $("#data #topics .choice:eq(" + nextInt(l) + ")");
+RhymeDice.randomPhoneme = function () {
+    var l = $("#data #phonemes .choice").length;
+    return $("#data #phonemes .choice:eq(" + RhymeDice.nextInt(l) + ")");
 }
 
-function nextInt(choices) {
-  return Math.floor(Math.random() * choices);
+RhymeDice.randomTopic = function () {
+    var l = $("#data #topics .choice").length;
+    return $("#data #topics .choice:eq(" + RhymeDice.nextInt(l) + ")");
 }
 
-$(function() {
-  $("#roll input").click(roll).click();
+RhymeDice.nextInt = function (choices) {
+    return Math.floor(Math.random() * choices);
+}
+
+$(function () {
+    $("#roll input").click(RhymeDice.roll).click();
 });
