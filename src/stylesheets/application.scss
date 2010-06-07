@@ -10,19 +10,21 @@ body {
 }
 
 #rhyme-scheme {
-  font-size: 24pt;
   width: 500px;
   height: 100px;
   .phoneme {
+    padding: 10px;
+    font-size: 24pt;
     float: left;
     width:100px;
   }
 }
 #rhyme-topic {
-  font-size: 24pt;
   width: 500px;
   height: 100px;
   .topic {
+    padding: 10px;
+    font-size: 24pt;
     float: left;
     width:100px;
   }

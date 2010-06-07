@@ -11,29 +11,31 @@ body {
 
 /* line 12 */
 #rhyme-scheme {
-  font-size: 24pt;
   width: 500px;
   height: 100px;
 }
-/* line 16 */
+/* line 15 */
 #rhyme-scheme .phoneme {
+  padding: 10px;
+  font-size: 24pt;
   float: left;
   width: 100px;
 }
 
-/* line 21 */
+/* line 22 */
 #rhyme-topic {
-  font-size: 24pt;
   width: 500px;
   height: 100px;
 }
 /* line 25 */
 #rhyme-topic .topic {
+  padding: 10px;
+  font-size: 24pt;
   float: left;
   width: 100px;
 }
 
-/* line 31 */
+/* line 33 */
 #roll {
   width: 500px;
   height: 100px;
