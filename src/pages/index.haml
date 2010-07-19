@@ -9,7 +9,10 @@
       .choice
         .phoneme
           .symbol= phoneme[:symbol]
-          .word= phoneme[:word]
+          .words
+            - phoneme[:words].each do |word|
+              .word= word
+          
 #dice-interface
   #rhyme
     #rhyme-topic-label Topic:

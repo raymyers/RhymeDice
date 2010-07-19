@@ -11,18 +11,27 @@ RhymeDice.roll = function () {
     for (i=0;i<RhymeDice.phonemeCount;i++) {
         $("#rhyme-scheme").append(RhymeDice.randomPhoneme().html());
     }
+    $("#rhyme-scheme .words").each(function() {
+ 
+        $(this).html(RhymeDice.randomWord($(this)).html())
+    });
     $("#rhyme-topic").empty();
     for (i=0;i<RhymeDice.topicCount;i++) {
         $("#rhyme-topic").append(RhymeDice.randomTopic().html());
     }
 }
 
-RhymeDice.randomPhoneme = function () {
+RhymeDice.randomPhoneme = function() {
     var l = $("#data #phonemes .choice").length;
     return $("#data #phonemes .choice:eq(" + RhymeDice.nextInt(l) + ")");
 }
 
-RhymeDice.randomTopic = function () {
+RhymeDice.randomWord = function(words) {
+    var l = words.find(".word").length;
+    return words.find(".word:eq(" + RhymeDice.nextInt(l) + ")");
+}
+
+RhymeDice.randomTopic = function() {
     var l = $("#data #topics .choice").length;
     return $("#data #topics .choice:eq(" + RhymeDice.nextInt(l) + ")");
 }
