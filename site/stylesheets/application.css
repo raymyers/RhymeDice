@@ -9,21 +9,15 @@ body {
   width: 900px;
 }
 
-/* line 18 */
-#rhyme {
-  width: 400px;
-}
-
-/* line 22 */
-#beat {
-  width: 500px;
-}
-
 /* line 26 */
 #beat, #rhyme {
   float: left;
-  padding: 0;
+  padding: 10 10 10 10;
   margin: 0;
+}
+body .container .words {
+  position:absolute;
+  top: 150px;
 }
 
 /* line 32 */
@@ -73,7 +67,6 @@ body {
   display: none;
 }
 
-/* line 69 */
 .clear {
   height: 0;
   font-size: 1px;

@@ -1,0 +1,76 @@
+<html>
+<head>
+<script src="soundmanagerv297a-20110123/script/soundmanager2.js"></script>
+<!-- 
+<script src="soundmanagerv297a-20110123/demo/360-player/script/360player.js"></script>
+-->
+<script src="http://www.schillmania.com/projects/soundmanager2/demo/360-player/script/360player.js"></script>
+<script type="text/javascript">
+soundManager.url = 'soundmanagerv297a-20110123/swf/';
+soundManager.flashVersion = 9; // optional: shiny features (default = 8)
+soundManager.useFlashBlock = false; // optionally, enable when you're ready to dive in
+// enable HTML5 audio support, if you're feeling adventurous. iPad/iPhone will always get this.
+// soundManager.useHTML5Audio = true;
+
+soundManager.useFastPolling = true; // increased JS callback frequency, combined with useHighPerformance = true
+
+threeSixtyPlayer.config.scaleFont = (navigator.userAgent.match(/msie/i)?false:true);
+threeSixtyPlayer.config.showHMSTime = true;
+
+// enable some spectrum stuffs
+
+threeSixtyPlayer.config.useWaveformData = true;
+threeSixtyPlayer.config.useEQData = true;
+
+// enable this in SM2 as well, as needed
+
+if (threeSixtyPlayer.config.useWaveformData) {
+  soundManager.flash9Options.useWaveformData = true;
+}
+if (threeSixtyPlayer.config.useEQData) {
+  soundManager.flash9Options.useEQData = true;
+}
+if (threeSixtyPlayer.config.usePeakData) {
+  soundManager.flash9Options.usePeakData = true;
+}
+
+// favicon is expensive CPU-wise, but can be used.
+if (window.location.href.match(/hifi/i)) {
+  threeSixtyPlayer.config.useFavIcon = true;
+}
+
+if (window.location.href.match(/html5/i)) {
+  // for testing IE 9, etc.
+  soundManager.useHTML5Audio = true;
+}
+
+
+soundManager.onready(function() {
+
+  var bassUrl = 'soundmanagerv297a-20110123/demo/_mp3/bass.mp3';
+  // SM2 has loaded - now you can create and play sounds!
+  var mySound = soundManager.createSound({
+    id: 'aSound',
+    url: bassUrl
+    // onload: [ event handler function object ],
+    // other options here..
+  });
+  //mySound.play();
+
+});
+
+soundManager.ontimeout(function() {
+
+  // (Optional) Hrmm, SM2 could not start. Show an error, etc.?
+
+});
+
+</script>
+</head>
+<body>
+<p>Hi</p>
+<div class="ui360 ui360-vis">
+ <a href="soundmanagerv297a-20110123/demo/_mp3/bass.mp3">play "an.mp3"</a>
+</div>
+</body>
+</html>

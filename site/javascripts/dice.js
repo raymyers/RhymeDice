@@ -32,8 +32,8 @@ RhymeDice.randomWord = function(words) {
 }
 
 RhymeDice.randomTopic = function() {
-    var l = $("#data #topics .choice").length;
-    return $("#data #topics .choice:eq(" + RhymeDice.nextInt(l) + ")");
+    var l = $("#topics .choice").length;
+    return $("#topics .choice:eq(" + RhymeDice.nextInt(l) + ")");
 }
 
 RhymeDice.nextInt = function (choices) {
@@ -43,4 +43,5 @@ RhymeDice.nextInt = function (choices) {
 $(function () {
     $("#roll input").click(RhymeDice.roll).click();
     $(".beatToggle").click(function() {$("#beat").toggleClass("hidden");});
+    $(".scheme-data").hide();
 });
