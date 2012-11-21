@@ -40,8 +40,21 @@ RhymeDice.nextInt = function (choices) {
     return Math.floor(Math.random() * choices);
 }
 
+RhymeDice.autoRollInterval = null;
+
 $(function () {
-    $("#roll input").click(RhymeDice.roll).click();
     $(".beatToggle").click(function() {$("#beat").toggleClass("hidden");});
     $(".scheme-data").hide();
+    $("#roll input").click(function() {
+      var bpm = $("#bpmInput").val();
+      var bars = $("#barsInput").val();
+      if (null != RhymeDice.autoRollInterval) {
+        window.clearInterval(RhymeDice.autoRollInterval);
+      }
+      if ($("#autoRollCheckbox").is(':checked')) {
+        RhymeDice.autoRollInterval=setInterval(RhymeDice.roll, (60*1000*4*bars)/bpm);
+      }
+      RhymeDice.roll();
+
+    }).click();
 });
