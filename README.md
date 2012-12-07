@@ -1,3 +1,2 @@
-Requires staticmatic-0.11.0.alpha, because the new Sass syntax is SCSS.
+RhymeDice: A tool for freestyle rapping. Brought to you by Pompey (Ray Myers) and Ice Nine (Macy Prewitt)
 
-gem install staticmatic --pre

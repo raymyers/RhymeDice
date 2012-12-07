@@ -1,261 +1,33 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns='http://www.w3.org/1999/xhtml'>
-  <head>
+<html xmlns='http://www.w3.org/1999/xhtml'><head>
     <title>Rhyme Dice</title>
     <meta content='text/html; charset=UTF-8' http-equiv='Content-Type' />
-    <link href="/stylesheets/application.css" media="all" rel="stylesheet" type="text/css"/>
-    <link href="/stylesheets/jplayer.blue.monday.css" media="all" rel="stylesheet" type="text/css"/>
+    <link href="/stylesheets/application.css" media="all" rel="stylesheet" type="text/css"/
     <style>
       body {
       }
     </style>
     <script language="javascript" src="javascripts/jquery-1.4.2.min.js" type="text/javascript"></script>
-    <script language="javascript" src="javascripts/jquery.jplayer.min.js" type="text/javascript"></script>
-    <script language="javascript" src="javascripts/jplayer-local.js" type="text/javascript"></script>
     <script language="javascript" src="javascripts/dice.js" type="text/javascript"></script>
   </head>
   <body>
-    <div class='container scheme-data' id="data">
-        <div class='choice'>
-          <div class='topic'>Physics</div>
-        </div>
-        <div class='choice'>
-          <div class='topic'>Chemistry</div>
-        </div>
-        <div class='choice'>
-          <div class='topic'>Biology</div>
-        </div>
-        <div class='choice'>
-          <div class='topic'>Regions</div>
-        </div>
-        <div class='choice'>
-          <div class='topic'>Theories</div>
-        </div>
-        <div class='choice'>
-          <div class='topic'>Hopes</div>
-        </div>
-        <div class='choice'>
-          <div class='topic'>Fears</div>
-        </div>
-        <div class='choice'>
-          <div class='topic'>Gender</div>
-        </div>
-        <div class='choice'>
-          <div class='topic'>Relationships</div>
-        </div>
-        <div class='choice'>
-          <div class='topic'>Sex</div>
-        </div>
-        <div class='choice'>
-          <div class='topic'>Romance</div>
-        </div>
-        <div class='choice'>
-          <div class='topic'>Language</div>
-        </div>
-        <div class='choice'>
-          <div class='topic'>Politics</div>
-        </div>
-        <div class='choice'>
-          <div class='topic'>Leaders</div>
-        </div>
-        <div class='choice'>
-          <div class='topic'>Artists</div>
-        </div>
-        <div class='choice'>
-          <div class='topic'>Painters</div>
-        </div>
-        <div class='choice'>
-          <div class='topic'>Musicians</div>
-        </div>
-        <div class='choice'>
-          <div class='topic'>Poets</div>
-        </div>
-        <div class='choice'>
-          <div class='topic'>Ecosystems</div>
-        </div>
-        <div class='choice'>
-          <div class='topic'>Climates</div>
-        </div>
-        <div class='choice'>
-          <div class='topic'>Plants</div>
-        </div>
-        <div class='choice'>
-          <div class='topic'>Animals</div>
-        </div>
-        <div class='choice'>
-          <div class='topic'>Time</div>
-        </div>
-        <div class='choice'>
-          <div class='topic'>Past</div>
-        </div>
-        <div class='choice'>
-          <div class='topic'>Future</div>
-        </div>
-        <div class='choice'>
-          <div class='topic'>Religeon</div>
-        </div>
-        <div class='choice'>
-          <div class='topic'>Superstition</div>
-        </div>
-        <div class='choice'>
-          <div class='topic'>Rituals</div>
-        </div>
-        <div class='choice'>
-          <div class='topic'>Fanbase</div>
-        </div>
-        <div class='choice'>
-          <div class='topic'>Skills</div>
-        </div>
-        <div class='choice'>
-          <div class='topic'>Medicine</div>
-        </div>
-        <div class='choice'>
-          <div class='topic'>Pain</div>
-        </div>
-        <div class='choice'>
-          <div class='topic'>Death</div>
-        </div>
-      <div id='phonemes'>
-        <div class='choice'>
-          <div class='phoneme'>
-            <div class='symbol'>i</div>
-            <div class='words'>
-              <div class='word'>Fleece</div>
-              <div class='word'>Neece</div>
-              <div class='word'>East</div>
-              <div class='word'>Priest</div>
-            </div>
-          </div>
-        </div>
-        <div class='choice'>
-          <div class='phoneme'>
-            <div class='symbol'>u</div>
-            <div class='words'>
-              <div class='word'>Goose</div>
-              <div class='word'>Loose</div>
-              <div class='word'>Moose</div>
-            </div>
-          </div>
-        </div>
-        <div class='choice'>
-          <div class='phoneme'>
-            <div class='symbol'>ɪ</div>
-            <div class='words'>
-              <div class='word'>Kit</div>
-              <div class='word'>Spit</div>
-              <div class='word'>Knit</div>
-              <div class='word'>Win</div>
-            </div>
-          </div>
-        </div>
-        <div class='choice'>
-          <div class='phoneme'>
-            <div class='symbol'>ʊ</div>
-            <div class='words'>
-              <div class='word'>Foot</div>
-              <div class='word'>Book</div>
-              <div class='word'>Crook</div>
-              <div class='word'>Shook</div>
-            </div>
-          </div>
-        </div>
-        <div class='choice'>
-          <div class='phoneme'>
-            <div class='symbol'>e</div>
-            <div class='words'>
-              <div class='word'>Face</div>
-              <div class='word'>Mace</div>
-              <div class='word'>Place</div>
-              <div class='word'>Taste</div>
-            </div>
-          </div>
-        </div>
-        <div class='choice'>
-          <div class='phoneme'>
-            <div class='symbol'>ɚ</div>
-            <div class='words'>
-              <div class='word'>Nurse</div>
-              <div class='word'>Verse</div>
-              <div class='word'>Purse</div>
-              <div class='word'>First</div>
-            </div>
-          </div>
-        </div>
-        <div class='choice'>
-          <div class='phoneme'>
-            <div class='symbol'>o</div>
-            <div class='words'>
-              <div class='word'>Goat</div>
-              <div class='word'>Throat</div>
-              <div class='word'>Gloat</div>
-              <div class='word'>Wrote</div>
-            </div>
-          </div>
-        </div>
-        <div class='choice'>
-          <div class='phoneme'>
-            <div class='symbol'>ɛ</div>
-            <div class='words'>
-              <div class='word'>Dress</div>
-              <div class='word'>Press</div>
-              <div class='word'>Flesh</div>
-              <div class='word'>Stretch</div>
-            </div>
-          </div>
-        </div>
-        <div class='choice'>
-          <div class='phoneme'>
-            <div class='symbol'>ʌ</div>
-            <div class='words'>
-              <div class='word'>Strut</div>
-              <div class='word'>Cut</div>
-              <div class='word'>What</div>
-              <div class='word'>Rust</div>
-            </div>
-          </div>
-        </div>
-        <div class='choice'>
-          <div class='phoneme'>
-            <div class='symbol'>ɔ</div>
-            <div class='words'>
-              <div class='word'>Thought</div>
-              <div class='word'>Caught</div>
-              <div class='word'>Bought</div>
-            </div>
-          </div>
-        </div>
-        <div class='choice'>
-          <div class='phoneme'>
-            <div class='symbol'>æ</div>
-            <div class='words'>
-              <div class='word'>Trap</div>
-              <div class='word'>Slap</div>
-              <div class='word'>Gap</div>
-              <div class='word'>Map</div>
-            </div>
-          </div>
-        </div>
-        <div class='choice'>
-          <div class='phoneme'>
-            <div class='symbol'>ɑ</div>
-            <div class='words'>
-              <div class='word'>Lot</div>
-              <div class='word'>Not</div>
-              <div class='word'>Spot</div>
-              <div class='word'>Hot</div>
-              <div class='word'>Trot</div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
     <div class="container">
+    <h2>Rhyme Dice</h1>
     <div id='dice-interface'>
       <div id='rhyme'>
         <div id='rhyme-topic-label'>Topic:</div>
         <div id='rhyme-topic'></div>
         <div id='rhyme-scheme-label'>Scheme:</div>
-        <div id='rhyme-scheme'></div>
+        <div id="rhyme-scheme">
+          <div class="phoneme">
+            <div class="symbol"></div>
+            <div class="word"></div>
+          </div>
+          <div class="phoneme">
+            <div class="symbol"></div>
+            <div class="word"></div>
+          </div>
+        </div>
         <div id='roll'>
           <input type='button' value='Roll' />
         </div>
@@ -263,52 +35,6 @@
           <input id="autoRollCheckbox" type="checkbox">Autoroll</input>
           <p>BPM<input type="text" id="bpmInput" value="87" size="4"/><input type="button" id="bpmTapButton" value="Tap"/></p>
           <p>Bars<input type="text" id="barsInput" value="4" size="4"/></p>
-        </div>
-      </div>
-      <div class='hidden' id='beat'>
-        <div id='jquery_jplayer'></div>
-        <div class='jp-playlist-player'>
-          <div class='jp-interface'>
-            <ul class='jp-controls'>
-              <li>
-                <a class='jp-play' href='#' id='jplayer_play' tabindex='1'>play</a>
-              </li>
-              <li>
-                <a class='jp-pause' href='#' id='jplayer_pause' tabindex='1'>pause</a>
-              </li>
-              <li>
-                <a class='jp-stop' href='#' id='jplayer_stop' tabindex='1'>stop</a>
-              </li>
-              <li>
-                <a class='jp-volume-min' href='#' id='jplayer_volume_min' tabindex='1'>min volume</a>
-              </li>
-              <li>
-                <a class='jp-volume-max' href='#' id='jplayer_volume_max' tabindex='1'>max volume</a>
-              </li>
-              <li>
-                <a class='jp-previous' href='#' id='jplayer_previous' tabindex='1'>previous</a>
-              </li>
-              <li>
-                <a class='jp-next' href='#' id='jplayer_next' tabindex='1'>next</a>
-              </li>
-            </ul>
-            <div class='jp-progress'>
-              <div class='jp-load-bar' id='jplayer_load_bar'>
-                <div class='jp-play-bar' id='jplayer_play_bar'></div>
-              </div>
-            </div>
-            <div class='jp-volume-bar' id='jplayer_volume_bar'>
-              <div class='jp-volume-bar-value' id='jplayer_volume_bar_value'></div>
-            </div>
-            <div class='jp-play-time' id='jplayer_play_time'></div>
-            <div class='jp-total-time' id='jplayer_total_time'></div>
-          </div>
-          <div class='jp-playlist' id='jplayer_playlist'>
-            <ul>
-              <!-- The function displayPlayList() uses this unordered list -->
-              <li></li>
-            </ul>
-          </div>
         </div>
       </div>
       <div class='clear'></div>

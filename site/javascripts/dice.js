@@ -2,38 +2,37 @@
 /*global RhymeDice*/
 var RhymeDice = {};
 
-RhymeDice.phonemeCount = 2;
-RhymeDice.topicCount = 1;
+RhymeDice.phonemeWordMap = {
+	"i":["Fleece", "Neece", "East", "Priest"],
+	"u":["Goose", "Loose", "Moose", "Shoe"],
+	"ɪ":["Kit", "Spit", "Knit", "Win"],
+	"ʊ":["Foot", "Book", "Crook", "Shook"],
+	"e":["Face", "Mace", "Place", "Taste"],
+	"ɚ":["Nurse", "Verse", "Purse", "First"],
+	"o":["Goat", "Throat", "Gloat", "Wrote"],
+	"ɛ":["Dress", "Press", "Flesh", "Stretch"],
+	"ʌ":["Strut", "Cut", "What", "Rust"],
+	"ɔ":["Thought", "Caught", "Bought", "Mock"],	
+	"æ":["Trap", "Slap", "Gap", "Map"],
+	"ɑ":["Lot", "Spot", "Not", "Trot", "Hot"]};
+
+RhymeDice.topics = ["Physics", "Chemistry", "Biology", "Regions", "Theories", "Hopes", "Fears", "Gender", "Relationships", "Sex", "Romance", "Language", "Politics", "Leaders", "Artists", "Painters", "Musicians", "Poets", "Ecosystems", "Climates", "Plants", "Animals", "Time", "Past", "Future", "Religeon", "Superstition", "Rituals", "Fanbase", "Skills", "Medicine", "Pain", "Death"];
 
 RhymeDice.roll = function () {
-    $("#rhyme-scheme").empty();
-    var i;
-    for (i=0;i<RhymeDice.phonemeCount;i++) {
-        $("#rhyme-scheme").append(RhymeDice.randomPhoneme().html());
-    }
-    $("#rhyme-scheme .words").each(function() {
- 
-        $(this).html(RhymeDice.randomWord($(this)).html())
+    $("#rhyme-scheme .phoneme").each(function() {
+ 		var phoneme = RhymeDice.randomPhoneme()
+        $(this).find(".symbol").text(phoneme);
+		$(this).find(".word").text(RhymeDice.randomElement(RhymeDice.phonemeWordMap[phoneme]));
     });
-    $("#rhyme-topic").empty();
-    for (i=0;i<RhymeDice.topicCount;i++) {
-        $("#rhyme-topic").append(RhymeDice.randomTopic().html());
-    }
+    $("#rhyme-topic").text(RhymeDice.randomElement(RhymeDice.topics));
 }
 
 RhymeDice.randomPhoneme = function() {
-    var l = $("#data #phonemes .choice").length;
-    return $("#data #phonemes .choice:eq(" + RhymeDice.nextInt(l) + ")");
+	return RhymeDice.randomElement(Object.keys(RhymeDice.phonemeWordMap));
 }
 
-RhymeDice.randomWord = function(words) {
-    var l = words.find(".word").length;
-    return words.find(".word:eq(" + RhymeDice.nextInt(l) + ")");
-}
-
-RhymeDice.randomTopic = function() {
-    var l = $("#topics .choice").length;
-    return $("#topics .choice:eq(" + RhymeDice.nextInt(l) + ")");
+RhymeDice.randomElement = function (arr) {
+    return  arr[RhymeDice.nextInt(arr.length)];
 }
 
 RhymeDice.nextInt = function (choices) {
@@ -44,7 +43,6 @@ RhymeDice.autoRollInterval = null;
 
 $(function () {
     $(".beatToggle").click(function() {$("#beat").toggleClass("hidden");});
-    $(".scheme-data").hide();
     $("#roll input").click(function() {
       var bpm = $("#bpmInput").val();
       var bars = $("#barsInput").val();
